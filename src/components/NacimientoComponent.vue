@@ -116,21 +116,7 @@ export default {
     },
 
     methods: {
-      addressCheck () {
-        this.errorMessages = this.address && !this.dia
-          ? `Hey! I'm required`
-          : ''
 
-        return true
-      },
-      resetForm () {
-        this.errorMessages = []
-        this.formHasErrors = false
-
-        Object.keys(this.form).forEach(f => {
-          this.$refs[f].reset()
-        })
-      },
       submit () {
         this.formHasErrors = false
 
